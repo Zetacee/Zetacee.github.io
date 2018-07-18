@@ -1,0 +1,36 @@
+body {
+  background-color: #0f0f0f;
+  overflow: hidden;
+}
+
+#Front {
+  position: absolute;
+  top:0px;
+  right:0px;
+  width: 100%;
+  height: 100%;
+}
+/*Edicion para que el elementeo se quede por delante de un canvas, que no pueden ser background  */
+canvas {
+  opacity:0;
+  transition: opacity 3s ease-in;
+}
+
+canvas.view{
+  opacity: 0.3;
+}
+
+/* Al principio canvas no tiene ninguna clase asociada a el (es el '.view'),
+entocnes hasta que no tenga la clase, la OPACIDAD, lo que se ve, es 0. Unicamente se verá el
+fondo. Y tendrá una transicion de la forma "ease-in" (hay 3 más diferentes) en el que tarda 3 segundos
+en llegar a la proxima parte del codigo donde se encuenta el canvas.view y la opacidad sube hasta 0.3.s
+*/
+
+.dg{
+  display: none!important;
+
+}
+/* Para poder eliminar algo que NO aparece en mi JS,
+lo que tenemos que hacer es buscarlo en el inpeccionar elemento del CHROME
+y con el Display none, decimos que esa clase no se muestre por pantalla, ya que
+pertenece a la libreria  */

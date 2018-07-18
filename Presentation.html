@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Sergio Zaragoza" content="Presentation">
+    <meta name="description" content="Visual descriocion">
+    <link href="./vendors/css/bootstrap.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Lobster" rel="stylesheet">
+    <link rel="stylesheet" href="./public/css/kaleidoscope.css">
+
+    <title>Hello</title>
+  </head>
+  <body>
+    <section id="Pagina">
+      <canvas id="Mandala"></canvas>
+    </section>
+    <!-- Un canvas no puede estar como fondo en background, por eso tenemos que meter
+    otro section, y decir que este tenga posicion absoluta y se encuentre por encima -->
+
+    <section id="Front">
+    <!-- <h1>HEY BRO</h1> -->
+    </section>
+    <!--Creamos otro section, ya que no
+    se visualizaria, en este nuevo section tenemos que meter
+    todo lo que queremso que se vea dentro de la web. esto se toca desde el CSS.  -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.6.5/dat.gui.min.js"></script>
+  <!-- Libreria a la que pertence el JS, con las animaciones -->
+
+
+
+  <script src="./public/js/kaleidoscope.js"></script>
+
+  </body>
+
+</html>
