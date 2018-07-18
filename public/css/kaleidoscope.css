@@ -34,3 +34,21 @@ en llegar a la proxima parte del codigo donde se encuenta el canvas.view y la op
 lo que tenemos que hacer es buscarlo en el inpeccionar elemento del CHROME
 y con el Display none, decimos que esa clase no se muestre por pantalla, ya que
 pertenece a la libreria  */
+
+
+/* ******************************************************** */
+/*CSS de las palabras moviendose  */
+h1 {
+	font-size: 35px;
+	margin-top: 120px;
+	text-align: center;
+  color:#ddd;
+}
+
+#cursor {
+	font-size: 30px;
+	font-weight: normal;
+}
+
+/*CSS de las palabras moviendose  */
+/* ******************************************************** */
