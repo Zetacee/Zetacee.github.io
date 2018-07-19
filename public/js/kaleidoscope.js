@@ -4,7 +4,7 @@ var settings = {
     scale: 0.67,
     iterations: 10,
     animate: true,
-    speed: 0.3,
+    speed: 0.5,
     offset: 0,
     slices: 13
 };
@@ -124,16 +124,15 @@ document.querySelector('#Mandala').classList.add('view')
 // JS, de las letras moviendose
 var area = document.getElementById('area'),
 	list = [
-		'designer',
-		'photographer',
-		'programmer',
-		'engineer',
-		'unstoppable',
-    'Sergio Zaragoza'
+		'Hello,',
+		'Are you creative ?',
+		'Are you a photographer ?',
+		'Are you a programmer ?',
+    'Else, talk to me.',
 	],
 	count_li = 0,
 	count = 0,
-	speed = 200;
+	speed = 100;
 
 
 function rewrite() {
@@ -170,3 +169,7 @@ function flashing() {
 
 flashing();
 //***********************************************************************
+//****************INTENTO DE REALENTIZAR LAS LETRAS DE SALIDA************
+ // var texto = document.getElementById('Front');
+ // texto.setTimeout(function(), 1000);
+ //***********************************************************************

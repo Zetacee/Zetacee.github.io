@@ -12,6 +12,7 @@ body {
   display: inline-flex;
   align-items: center;
   cursor: pointer;
+  position: relative;
 }
 
 .label-text {
