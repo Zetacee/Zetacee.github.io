@@ -6,22 +6,31 @@ body {
   overflow: hidden;
   font-family: 'IBM Plex Mono', monospace;
   font-weight: 300;
+  background-color: #232323;
+}
+
+.first{
+    padding-top: 500px;
+    position: absolute;
+    z-index: 1;
 }
 
 .label {
   display: inline-flex;
   align-items: center;
   cursor: pointer;
-  position: relative;
+  /* position: relative; */
 }
 
 .label-text {
   margin-left: 8px;
+  color: white;
 }
 
 .toggle {
+  display: none;
   isolation: isolate;
-  position: relative;
+  /* position: relative; */
   height: 24px;
   width: 48px;
   border-radius: 15px;
