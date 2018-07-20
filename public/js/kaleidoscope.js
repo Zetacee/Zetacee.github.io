@@ -121,6 +121,9 @@ document.querySelector('#Mandala').classList.add('view')
 
 
 //***********************************************************************
+//***********************************************************************
+//***********************************************************************
+
 // JS, de las letras moviendose
 var area = document.getElementById('area'),
 	list = [
@@ -144,12 +147,27 @@ function rewrite() {
 		count = 0;
 		count_li++;
 		clearTimeout(timer);
-		setTimeout(rewrite, 2500);
-	}
+	  var t2 = setTimeout(rewrite, 2500);
+  }
 
-	if(count_li === list.length) {
-		count_li = 0;
-	}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//Lo que consigo con este if es que cuadno la cuenta de los "li" sea igual a la longitud de la lista
+//empiece a correr el setTimeout que me envia a mi otra funcion a los 2500 milisegundos y esta funcion
+//con el .style.display accedemos al css y indicamos que no aparezca.
+if(count_li === list.length) {
+  clearTimeout(t2);
+    setTimeout(deleteDisplay, 2500);
+
+  }
+
+function deleteDisplay(){
+  document.getElementById("area").style.display="none";
+  document.getElementById("cursor").style.display="none";
+  document.querySelector('.social').style.display = "block";
+
+}
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 }
 
 rewrite();
@@ -169,7 +187,14 @@ function flashing() {
 
 flashing();
 //***********************************************************************
-//****************INTENTO DE REALENTIZAR LAS LETRAS DE SALIDA************
- // var texto = document.getElementById('Front');
- // texto.setTimeout(function(), 1000);
- //***********************************************************************
+//***********************************************************************
+//***********************************************************************
+
+//=====================================================================================
+//=====================================================================================
+//AÑADIR LA SOCIAL MEDIA
+if(	document.getElementById('cursor').style.display === "none"){
+
+  document.getElementById('social').style.display = "block";
+
+}

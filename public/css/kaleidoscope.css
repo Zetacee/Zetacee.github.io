@@ -51,13 +51,10 @@ h1 {
 	font-size: 30px;
 	font-weight: normal;
 }
-
-/* section.front {
-  opacity:0;
-  transition: opacity 3s ease-in;
-}
-section.front{
-  opacity: 100%;
-} */
 /*CSS de las palabras moviendose  */
 /* ******************************************************** */
+
+h3{
+  
+  color: white;
+}
