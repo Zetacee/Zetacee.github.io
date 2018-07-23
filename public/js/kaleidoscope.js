@@ -127,6 +127,7 @@ document.querySelector('#Mandala').classList.add('view')
 // JS, de las letras moviendose
 var area = document.getElementById('area'),
 	list = [
+    '       ',
 		'Hello,',
 		'Are you creative ?',
 		'Are you a photographer ?',
@@ -157,14 +158,17 @@ function rewrite() {
 if(count_li === list.length) {
   clearTimeout(t2);
     setTimeout(deleteDisplay, 2500);
+    // setTimeout(aboutMe, 7500);
+
+
 
   }
 
 function deleteDisplay(){
   document.getElementById("area").style.display="none";
   document.getElementById("cursor").style.display="none";
+  // document.getElementById("elH1").style.display="none";
   document.querySelector('.social').style.display = "block";
-
 }
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -193,8 +197,32 @@ flashing();
 //=====================================================================================
 //=====================================================================================
 //AÑADIR LA SOCIAL MEDIA
-if(	document.getElementById('cursor').style.display === "none"){
+(function aboutMe($){
+  // variables
+  elementWidth = $('ul').width(),
+  containerWidth = $('nav').width(),
+  difference = elementWidth-containerWidth,
+  finalWidth = difference * 1.5,
+  element = $('ul');
 
-  document.getElementById('social').style.display = "block";
+  // active on click
+  $('li').on('click', function(){
+    $('li').removeClass('active');
+    $(this).addClass('active');
+  });
 
-}
+})(jQuery);
+
+
+//turn on to make the photo follow mouse
+// $(document).ready(function()
+// {
+//     $(document).mousemove(function( event )
+//     {
+//         var docWidth = $(document).width();
+//         var docHeight = $(document).height();
+//         var xValue = (event.clientX/docWidth)*100;
+//         var yValue = (event.clientY/docHeight)*100;
+//         $('.photo').css('background-position', xValue+'%,'+yValue+'%');
+//     });
+// });
