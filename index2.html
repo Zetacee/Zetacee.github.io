@@ -1,0 +1,658 @@
+
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+
+    <meta charset="utf-8"> <!--deberia ser de las primeras meta-->
+
+    <script src="https://use.fontawesome.com/7cc0d7ca29.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Que la pantalla donde se visualice se adapte completametne a la pantalla,
+     escala correcta-->
+    <meta name="Zetacee" content="Portafolio">
+    <meta name="description" content="breve descripcion de la pagina web-(uso palabras clave)">
+    <link href="./vendors/css/bootstrap.css" rel="stylesheet">
+    <link rel="shortcut icon" href="./public/images/logo.ico">
+    <!--Introducir el icono que se verá en el navegador(logo)
+    ademas, tendriamos que incorporar muchos icon segusdfn los tamaños de cada navegador-->
+
+    <!--comno crear tu manifest para HTML, es crear como una app dentro del movil,<!-FRASE-->
+      <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+    <!--PONER FUENTES-->
+
+
+     <link rel="stylesheet" href="./public/css/app2.css">
+     <title>Zetacee </title>
+     <!--SOCIAL MEDIA-->
+     <script src='//production-assets.codepen.io/assets/editor/live/console_runner-079c09a0e3b9ff743e39ee2d5637b9216b3545af0de366d4b9aad9dc87e26bfd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/events_runner-73716630c22bbc8cff4bd0f07b135f00a0bdc5d14629260c3ec49e5606f98fdd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/css_live_reload_init-2c0dc5167d60a5af3ee189d570b1835129687ea2a61bee3513dee3a50c115a77.js'></script><meta charset='UTF-8'><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="//production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" /><link rel="mask-icon" type="" href="//production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" /><link rel="canonical" href="https://codepen.io/mikghnson/pen/pjqaqQ?depth=everything&limit=all&order=popularity&page=33&q=icon&show_forks=false" />
+
+   <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css'>
+
+   <!--GALERIA-->
+   <head><script src='//production-assets.codepen.io/assets/editor/live/console_runner-079c09a0e3b9ff743e39ee2d5637b9216b3545af0de366d4b9aad9dc87e26bfd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/events_runner-73716630c22bbc8cff4bd0f07b135f00a0bdc5d14629260c3ec49e5606f98fdd.js'></script><script src='//production-assets.codepen.io/assets/editor/live/css_live_reload_init-2c0dc5167d60a5af3ee189d570b1835129687ea2a61bee3513dee3a50c115a77.js'></script><meta charset='UTF-8'><meta name="robots" content="noindex"><link rel="shortcut icon" type="image/x-icon" href="//production-assets.codepen.io/assets/favicon/favicon-8ea04875e70c4b0bb41da869e81236e54394d63638a1ef12fa558a4a835f1164.ico" /><link rel="mask-icon" type="" href="//production-assets.codepen.io/assets/favicon/logo-pin-f2d2b6d2c61838f7e76325261b7195c27224080bc099486ddd6dccb469b8e8e6.svg" color="#111" /><link rel="canonical" <href="https://codepen.io/ebrewe/pen/QKpbBz?depth=everything&limit=all&order=popularity&page=12&q=portfolio&show_forks=false"/>
+
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+
+
+  <body>
+
+    <header>
+
+
+      <section name:"imagen_medio">
+        <div id="contenedor_entero">
+
+
+        <div id="place_medio_wrapper">
+
+          <div class="vertical_center2">
+
+            <div class="container">
+
+              <div class="row text-center-down">
+                <div class="col-lg-12 sergio">
+                  <h1>Sergio Zaragoza</h1>
+                  <h3>photography of the next level</h3>
+                  <h4>@zetacee</h4>
+                  <br>
+
+
+
+
+                </br>
+            <!--      <img src="./public/images/luana.jpg" class="rounded-circle width="300" height="300""> -->
+                </div>
+
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+
+
+      </section>
+      <div class="container">
+        <div id="portfolio"></div>
+      </div>
+      <script src='//production-assets.codepen.io/assets/common/stopExecutionOnTimeout-b2a7b3fe212eaa732349046d8416e00a9dec26eb7fd347590fbced3ab38af52e.js'></script><script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react.min.js'></script><script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.3.1/react-dom.min.js'></script>
+      <script >'use strict';
+
+      function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+      function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+      function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+      var _React = React;
+      var Component = _React.Component;
+
+      var items = [{ name: '', image : './public/images/vicenta1.jpg' }, { name: '', image: './public/images/fondo.jpg' }, { name: '', image: './public/images/ana1.jpg' }, { name: 'Room', image: 'http://ericbrewer.ca/images/stockImages/mistRiver.jpg?dl=1' }, { name: 'New York', image: 'http://ericbrewer.ca/images/stockImages/newYork.jpg?dl=1' }, { name: 'Reflection', image: 'http://ericbrewer.ca/images/stockImages/SSD.jpg?dl=1' }];
+
+      var Gallery = function (_Component) {
+        _inherits(Gallery, _Component);
+
+        function Gallery(props) {
+          _classCallCheck(this, Gallery);
+
+          var _this = _possibleConstructorReturn(this, _Component.call(this, props));
+
+          _this.items = items;
+          _this.defaultCardPos = { top: '-200%', left: 0 };
+          _this.state = { activeItem: false, cardTop: _this.defaultCardPos.top, cardLeft: _this.defaultCardPos.left, cardActive: false };
+          return _this;
+        }
+
+        Gallery.prototype.handleItemClick = function handleItemClick(name, item) {
+          var _this2 = this;
+
+          this.setState({ activeItem: name });
+          var oTop = item.offsetTop,
+              oLeft = item.offsetLeft;
+          this.setState({ /*cardTop: oTop, cardLeft: oLeft */});
+          this.cardTimeout = setTimeout(function () {
+            _this2.setState({ cardActive: false });
+          }, 0);
+        };
+
+
+        Gallery.prototype.getBackgroundImage = function getBackgroundImage(itemName) {
+          var imageItem = this.items.reduce(function (ov, nv) {
+            return nv.name == itemName ? nv : ov;
+          });
+          return imageItem.image;
+        };
+
+        Gallery.prototype.handleCardClick = function handleCardClick() {
+          if (!this.state.activeItem) return false;
+          this.setState({ cardActive: false, activeItem: false, cardTop: this.defaultCardPos.top, cardLeft: this.defaultCardPos.left });
+        };
+
+        Gallery.prototype.renderGallery = function renderGallery() {
+          var _this3 = this;
+
+          return this.items.map(function (item) {
+            var activeClass = _this3.state.cardActive ? 'active' : ''; //this.state.activeItem == item.name ? 'active' : '';
+            return React.createElement(
+              GalleryItem,
+              { name: item.name, background: item.image, active: activeClass, clickFunction: _this3.handleItemClick.bind(_this3) },
+              React.createElement(
+                'h2',
+                null,
+                item.name
+              ),
+              React.createElement('div', { className: 'item-mask' })
+            );
+          });
+        };
+
+        Gallery.prototype.render = function render() {
+          var maskActive = ''; //this.state.activeItem ? "active" : "";
+          var galleryBackground = this.state.activeItem ? this.getBackgroundImage(this.state.activeItem) : '';
+          return React.createElement(
+            'div',
+            { className: 'gallery' },
+            this.renderGallery(),
+            React.createElement(Card, { title: this.state.activeItem, ref: 'card', top: this.state.cardTop, left: this.state.cardLeft, active: this.state.cardActive, closeFunction: this.handleCardClick.bind(this) }),
+            React.createElement('div', { className: 'gallery-mask ' + maskActive }),
+            React.createElement('div', { className: 'backdrop ' + (this.state.activeItem ? 'active' : ''), style: { 'backgroundImage': 'url(' + galleryBackground + ')' }, onClick: this.handleCardClick.bind(this) })
+          );
+        };
+
+        return Gallery;
+
+      }(Component);
+
+      var GalleryItem = function (_Component2) {
+        _inherits(GalleryItem, _Component2);
+
+        function GalleryItem(props) {
+          _classCallCheck(this, GalleryItem);
+
+          var _this4 = _possibleConstructorReturn(this, _Component2.call(this, props));
+
+          console.log(_this4.props.background);
+          return _this4;
+        }
+
+        GalleryItem.prototype.handleClick = function handleClick(e) {
+          e.preventDefault();
+          this.props.clickFunction(this.props.name, this.refs.el);
+        };
+
+        GalleryItem.prototype.render = function render() {
+          var style = { 'background-image': 'url(' + this.props.background + ')' };
+          return React.createElement(
+            'div',
+            { ref: 'el', className: 'gallery-item ' + this.props.active, style: style, onClick: this.handleClick.bind(this) },
+            this.props.children
+          );
+        };
+
+        return GalleryItem;
+      } (Component);
+
+      var Card = function (_Component3) {
+        _inherits(Card, _Component3);
+
+        function Card(props) {
+          _classCallCheck(this, Card);
+
+          var _this5 = _possibleConstructorReturn(this, _Component3.call(this, props));
+
+          _this5.state = { transit: false };
+          return _this5;
+        }
+
+        Card.prototype.handleClose = function handleClose(e) {
+          var _this6 = this;
+
+          e.preventDefault();
+          this.setState({ transit: false });
+          this.timeout = setTimeout(function () {
+            _this6.setState({ transit: false });
+            _this6.props.closeFunction();
+          }, 400);
+        };
+
+        Card.prototype.render = function render() {
+          var activeClass = this.props.active ? "active" : "";
+          var transitClass = this.state.transit ? "transit" : "";
+          return React.createElement(
+            'div',
+            { className: 'card ' + activeClass + ' ' + transitClass, style: { 'left': this.props.left, 'top': this.props.top } },
+            React.createElement(
+              'h2',
+              null,
+              this.props.title
+            ),
+            React.createElement(
+              'a',
+              { className: 'btn-close', onClick: this.handleClose.bind(this) },
+              'Close x'
+            ),
+            React.createElement(
+              'p',
+              null,
+              'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus placerat vitae mi ut lobortis. In vehicula, risus eu rhoncus ornare, augue mauris volutpat justo, ut pellentesque libero turpis quis leo. Nam id porttitor enim, eget tempor arcu. Nulla blandit accumsan tellus in tristique. Praesent pellentesque quis nisi sit amet accumsan. Cras quam dui, pulvinar eget finibus eget, tincidunt in nisl. Vestibulum vulputate fringilla odio, eu porta mi porta ut. Cras fermentum porttitor mi, vel dignissim dui egestas sed. Pellentesque sapien nunc, commodo ut libero at, molestie venenatis urna. Fusce commodo enim magna, ac efficitur arcu dictum in.'
+            )
+          );
+        };
+
+        return Card;
+      }(Component);
+
+      ReactDOM.render(React.createElement(Gallery, null), document.getElementById('portfolio'));
+      //# sourceURL=pen.js
+      </script>
+
+
+
+      <div class="container foto">
+
+      <div class="container">
+         <div class="row text-center">
+                  <div class="col-md-12">
+                  <br/><br/>
+                  <h3>
+                  Para acceder a mi portofolio entrar en
+                  <a href="http://www.instagram.com/zetacee/" target="_blank" style="text-decoration:none;color:red">www.zetacee.com</a> <br> <br><br>
+                  </h3>
+
+                  </div>
+          </div>
+
+    <section class:"Precios">
+
+
+              <div class="row db-padding-btm db-attached">
+                  <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                      <div class="db-wrapper">
+                          <div class="db-pricing-eleven db-bk-color-one">
+                              <div class="price">
+                                  <sup></sup>60€
+                                      <small>por persona</small>
+                              </div>
+                              <div class="type">
+                                  SMALL PLAN
+                              </div>
+                              <ul>
+
+                                  <li><i class="glyphicon glyphicon-print"></i>20 Fotografias </li>
+                                  <li><i class="glyphicon glyphicon-time"></i> 1 Outfit</li>
+                                  <li><i class="glyphicon glyphicon-trash"></i> 1 Localización</li>
+                              </ul>
+                              <div class="pricing-footer">
+
+                                  <a href="#" class="btn db-button-color-square btn-lg">BOOK ORDER</a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                       <div class="db-wrapper">
+                      <div class="db-pricing-eleven db-bk-color-two popular">
+                          <div class="price">
+                              <sup></sup>100€
+                                      <small>por persona</small>
+                          </div>
+                          <div class="type">
+                              MEDIUM PLAN
+                          </div>
+                          <ul>
+
+                              <li><i class="glyphicon glyphicon-print"></i>45 Fotografias </li>
+                              <li><i class="glyphicon glyphicon-time"></i>2 Outfits </li>
+                              <li><i class="glyphicon glyphicon-trash"></i>2 Localización</li>
+                          </ul>
+                          <div class="pricing-footer">
+
+                              <a href="#" class="btn db-button-color-square btn-lg">BOOK ORDER</a>
+                          </div>
+                      </div>
+                           </div>
+                  </div>
+                  <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
+                       <div class="db-wrapper">
+                      <div class="db-pricing-eleven db-bk-color-three">
+                          <div class="price">
+                              <sup></sup>700€
+                                      <small>Por grupo</small>
+                          </div>
+                          <div class="type">
+                              ADVANCE PLAN
+                          </div>
+                          <ul>
+
+                              <li><i class="glyphicon glyphicon-print"></i>100+ Fotografias </li>
+                              <li><i class="glyphicon glyphicon-time"></i>5+ Outfits </li>
+                              <li><i class="glyphicon glyphicon-trash"></i>6 Localización</li>
+                          </ul>
+                          <div class="pricing-footer">
+
+                              <a href="#" class="btn db-button-color-square btn-lg">BOOK ORDER</a>
+                          </div>
+                      </div>
+                           </div>
+                  </div>
+
+              </div>
+
+          </div>
+          </div>
+
+</section>
+
+
+    <footer>
+      <div class="wrp"><a class="icon icon-twitter" href="#"><i class="fa fa-twitter"></i></a><a class="icon icon-facebook" href="#"><i class="fa fa-facebook"></i></a><a class="icon icon-instagram" href="#"><i class="fa fa-instagram"></i></a><a class="icon icon-gplus" href="#"><i class="fa fa-google-plus"></i></a></div>
+
+      <style class="cp-pen-styles">html,
+      body {
+        height: 100%;
+        min-height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      .wrp {
+        text-align: center;
+        height: 100%;
+        width: 100%;
+      }
+      .wrp::before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+      }
+      .icon {
+        display: inline-block;
+        font-size: 50px;
+        line-height: 90px;
+        height: 90px;
+        width: 90px;
+        margin-right: 20px;
+        color: #4099ff;
+        border-radius: 100%;
+        position: relative;
+      }
+      .icon::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border-radius: 100%;
+        background: rgba(0,0,0,0.1);
+        z-index: -1;
+      }
+      .icon::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        vertical-align: middle;
+        width: 100%;
+        height: 100%;
+        transform: scale(0);
+        background: #4099ff;
+        border-radius: 100%;
+        z-index: -1;
+      }
+      .icon:hover {
+        animation-name: bubble2;
+        animation-duration: 0.5s;
+        animation-delay: 0.1s;
+        animation-fill-mode: forwards;
+      }
+      .icon:hover::after {
+        animation-name: bubble;
+        animation-duration: 0.5s;
+        animation-fill-mode: forwards;
+      }
+      .icon-twitter {
+        color: #4099ff;
+      }
+      .icon-twitter::after {
+        background: #4099ff;
+      }
+      .icon-facebook {
+        color: #3b5998;
+      }
+      .icon-facebook::after {
+        background: #3b5998;
+      }
+      .icon-instagram {
+        color: #3f729b;
+      }
+      .icon-instagram::after {
+        background: #3f729b;
+      }
+      .icon-gplus {
+        color: #dc4e41;
+      }
+      .icon-gplus::after {
+        background: #dc4e41;
+      }
+      @-moz-keyframes bubble {
+        100% {
+          transform: scale(1);
+        }
+      }
+      @-webkit-keyframes bubble {
+        100% {
+          transform: scale(1);
+        }
+      }
+      @-o-keyframes bubble {
+        100% {
+          transform: scale(1);
+        }
+      }
+      @keyframes bubble {
+        100% {
+          transform: scale(1);
+        }
+      }
+      @-moz-keyframes bubble2 {
+        100% {
+          color: #fff;
+        }
+      }
+      @-webkit-keyframes bubble2 {
+        100% {
+          color: #fff;
+        }
+      }
+      @-o-keyframes bubble2 {
+        100% {
+          color: #fff;
+        }
+      }
+      @keyframes bubble2 {
+        100% {
+          color: #fff;
+        }
+      }
+      </style>
+    </div>
+    </footer>
+    <style class="cp-pen-styles">@import "https://fonts.googleapis.com/css?family=Fira+Sans:300,400";
+body, html {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background: #f4f4f4;
+  background: linear-gradient(0deg, #eae4e4, #f4f4f4);
+  font-family: "Fira Sans", helvetica, arial, sans-serif;
+}
+
+#portfolio {
+  display: block;
+  padding: 10px;
+  width: 100%;
+  height: 100%;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  width: 100%;
+}
+.gallery .gallery-mask {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  transition: all .2s ease-out;
+  opacity: 0;
+  display: none;
+}
+.gallery .gallery-mask.active {
+  display: block;
+  transition: all .6s ease-out;
+  opacity: 1;
+}
+
+.gallery-item {
+  display: flex;
+  position: relative;
+  width: 30%;
+  height: 200px;
+  background-color: white;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  background: white no-repeat center center;
+  background-size: cover;
+  box-shadow: 3px 5px 15px -3px rgba(0, 0, 0, 0.3);
+  transition: all .4s ease-out;
+  overflow: hidden;
+  z-index: 5;
+}
+.gallery-item h2 {
+  color: white;
+  font-weight: 300;
+  text-transform: uppercase;
+  z-index: 2;
+}
+.gallery-item .item-mask {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  transition: all .2s ease-out;
+}
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+.gallery-item:hover .item-mask {
+  opacity: 0;
+}
+.gallery-item.active {
+  opacity: 0;
+  transform: scale(0.4);
+}
+
+@media (max-width: 760px) {
+  .gallery-item {
+    width: 48%;
+  }
+}
+
+.card {
+  display: block;
+  position: absolute;
+  top: -200%;
+  left: 0;
+  width: 30%;
+  height: 200px;
+  padding: 50px;
+  background: white;
+  overflow: hidden;
+  z-index: 200;
+  box-shadow: 5px 7px 20px -5px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 760px) {
+  .card {
+    width: 48%;
+  }
+}
+.card .btn-close {
+  display: block;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+.card h1, .card p {
+  width: 500px;
+  transition: all .4s linear;
+}
+.card.active {
+  top: 50% !important;
+  left: 50% !important;
+  width: 600px;
+  height: 80%;
+  transform: translate(-50%, -50%);
+  transition: all .4s ease-in;
+}
+.card.active h1, .card.active p {
+  width: 500px;
+}
+@media (max-width: 760px) {
+  .card.active {
+    width: 320px;
+    padding: 50px 30px;
+  }
+  .card.active h1, .card.active p {
+    width: 260px;
+  }
+}
+.card.transit {
+  transform: translate(-50%, -100%);
+  opacity: 0;
+}
+
+.backdrop {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent no-repeat center center;
+  background-size: cover;
+  opacity: 0;
+  z-index: 1;
+  transition: opacity .6s ease-in;
+}
+.backdrop.active {
+  opacity: 1;
+}
+</style>
+
+
+
+  </body>
+</html>
